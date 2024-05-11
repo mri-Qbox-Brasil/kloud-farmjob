@@ -319,10 +319,10 @@ KloudDev.Shops = {
     ["sell"] = {
         blip = {
             enabled = true,
-            label = "Crops Buyer",
+            label = "Feirante",
             sprite = 59,
-            scale = 0.9,
-            colour = 2,
+            scale = 0.7,
+            colour = 0,
         },
         coords = {
             vector4(2028.18, 4978.26, 40.12, 224.48),
@@ -347,10 +347,10 @@ KloudDev.Shops = {
     ["shop"] = {
         blip = {
             enabled = true,
-            label = "Farmer's Shop",
+            label = "Loja da Agricultura",
             sprite = 59,
-            scale = 0.9,
-            colour = 2,
+            scale = 0.7,
+            colour = 0,
         },
         coords = {
             vector4(461.93, -696.86, 26.42, 70.94),
