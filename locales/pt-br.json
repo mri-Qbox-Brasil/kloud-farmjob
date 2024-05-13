@@ -1,0 +1,14 @@
+{
+    "no_required_item": "Você não tem um(a) %s",
+    "cant_carry": "Você não pode carregar mais %s",
+    "uprooting": "Arrancando %s",
+    "washing": "Lavando %s",
+    "item_broke": "%s Quebrou",
+    "wash_crops": "Lavar Culturas",
+    "no_crops_to_wash": "Você não tem nenhuma cultura para lavar",
+    "press_wash_crops": "%s Lavar Culturas",
+    "open_shop": "Abrir Loja",
+    "open_sell": "Abrir Venda",
+    "sell_crops": "Vender Culturas",
+    "farmer_shop": "Loja de Agricultura"
+}
