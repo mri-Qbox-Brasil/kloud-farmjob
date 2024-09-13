@@ -179,7 +179,6 @@ CreateTargets = function()
                     icon = info.target.icon,
                     currentZone = zone,
                     canInteract = function(entity, distance, coords, name, bone)
-                        print("canInteract", not _G.IsBusy, _G.InZone, CanPick(name), _G.CurrentZone, zone, info.job, PlayerJob.name)
                         if not _G.IsBusy and _G.InZone and CanPick(name) and _G.CurrentZone == zone and (info.job and PlayerJob.name == info.job or true) then return true end
                         return false
                     end,
