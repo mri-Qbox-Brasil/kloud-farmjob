@@ -78,25 +78,3 @@ lib.callback.register("kloud-farm:callback:buyItem", function(source, data)
         return false
     end
 end)
-
--- Version Check from https://github.com/CodineDev/cdn-fuel
-
-local updatePath
-local resourceName
-
-CheckVersion = function(err, response, headers)
-    local curVersion = LoadResourceFile(GetCurrentResourceName(), "version")
-	if response == nil then print("^1"..resourceName.." check for updates failed ^7") return end
-    if curVersion ~= nil and response ~= nil then
-		if curVersion == response then Color = "^2" else Color = "^1" end
-        print("\n^1----------------------------------------------------------------------------------^7")
-        print(resourceName.."'s latest version is: ^2"..response.."!\n^7Your current version: "..Color..""..curVersion.."^7!\nIf needed, update from https://github.com"..updatePath.."")
-        print("^1----------------------------------------------------------------------------------^7")
-    end
-end
-
-CreateThread(function()
-	updatePath = "/kloudzxc/kloud-farmjob"
-	resourceName = "kloud-farmjob ("..GetCurrentResourceName()..")"
-	PerformHttpRequest("https://raw.githubusercontent.com"..updatePath.."/master/version", CheckVersion, "GET")
-end)
